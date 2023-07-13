@@ -1,69 +1,322 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+#root {
+  margin-bottom: 50px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.background {
+  height: 100%;
+  min-height: 100%;
+  background-image: url(./assets/loop.jpg);
+  background-repeat: repeat;
+  background-size: fill;
 }
 
-body {
-  margin: 0;
+.altWord {
+  color: #e99a08;
+}
+/* NavBar css */
+
+.navBar {
+  background: linear-gradient(to right, #213547, black);
   display: flex;
-  place-items: center;
-  min-width: 320px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e99a08;
+  height: 100px;
+}
+.brand {
+  width: 25%;
+  display: flex;
+  padding-left: 15px;
+  height: 100%;
+}
+
+.brandLogo {
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.menuButton {
+  color: black;
+}
+.cartButton {
+  width: 25%;
+  display: flex;
+  padding-right: 15px;
+  justify-content: right;
+}
+
+/* NavBar css */
+
+/* Footer css */
+
+.footerBar {
+  background-color: #213547;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: linear-gradient(to right, #213547, black);
+  margin-bottom: 0px;
+  border-top: 1px solid #e99a08;
+}
+
+.footerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 25px;
+  color: white;
+}
+
+.footerIcon {
+  width: 50px;
+  height: 45px;
+  padding: 5px;
+  margin: 5px auto;
+}
+
+/* Footer css */
+
+/* ItemDetail css */
+
+.footerButtons {
+  align-items: center;
+}
+
+/* ItemDetail css */
+
+/* ItemList & Item css */
+
+.imgHover:hover {
+  transform: scale(1.125);
+  box-shadow: 5px 5px 15px;
+  transition: 500ms;
+}
+
+.itemList {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  height: 100%;
   min-height: 100vh;
+  padding-bottom: 75px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.itemContainer {
+  display: flex;
+  position: relative;
+  top: 25px;
+  height: fit-content;
+  border: 1px solid #e99a08;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px;
+  margin: 15px 15px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* ItemList & Item css */
+
+/* ItemCount css */
+
+.countLabel {
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 10%;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+/* ItemCount css */
+
+/* welcome css */
+
+.welcomeContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.welcome {
+  background-image: url(./assets/welcomebg.jpg);
+  background-size: cover;
+  height: fit-content;
+  width: 75%;
+  margin: 25px auto;
+  border: 1px solid #e99a08;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgb(0, 0, 0);
+  display: block;
+}
+
+.welcomeLogo {
+  text-align: center;
+  margin: 15px auto;
+  width: 256px;
+}
+.welcomeMessage {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid black;
+  width: 50%;
+  border-radius: 25px;
+  text-align: center;
+  margin: 0 auto 150px auto;
+}
+
+.textP {
+  padding: 15px;
+}
+
+/* welcome css */
+
+.loadingContainer {
+  height: 100vh;
+}
+
+/* cart css */
+
+.prodCartContainer {
+  width: 100%;
+  height: 100vh;
+}
+
+.cartHeader {
+  flex-direction: row wrap;
+  justify-content: space-between;
+  margin: 25px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: black;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px black;
+}
+
+.cartBlocks {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+.cartBlock {
+  color: white;
+  text-align: center;
+  width: 22%;
+}
+
+.cartItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 5px 15px;
+  border: 1px solid #213547;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+.cartFooter {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  align-items: center;
+  border-radius: 25px;
+  padding: 15px;
+  box-shadow: 5px 5px 15px black;
+}
+
+/* cart css */
+
+/* Form css */
+
+.orderItems {
+  display: block;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 25px;
+}
+.orderMessagge {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+  text-align: center;
+  color: white;
+  border-radius: 25px;
+  width: 50%;
+  padding: 25px;
+  margin: 25px auto;
+}
+
+form {
+  border: 2px solid #e99a08;
+  background-color: white;
+  width: 50%;
+  padding: 25px;
+  height: fit-content;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px;
+  margin: 25px auto 50px;
+}
+@media screen and (max-width: 1200px) {
+  .welcome {
+    width: 85%;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+  .welcomeMessage {
+    width: 75%;
   }
 }
+@media screen and (max-width: 992px) {
+  form {
+    width: 75%;
+  }
+  .orderMessagge {
+    width: 75%;
+  }
+  .welcome {
+    width: 90%;
+  }
+  .welcomeMessage {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    width: 85%;
+  }
+  .welcome {
+    border-radius: 25px;
+  }
+  .welcomeMessage {
+    width: 90%;
+  }
+  .orderMessagge {
+    width: 85%;
+  }
+  .cartHeader {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: 0 5px 5px black;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .menu {
+    width: 35%;
+  }
+  .brand {
+    height: 100%;
+    width: 40%;
+  }
+}
+/* form css */
