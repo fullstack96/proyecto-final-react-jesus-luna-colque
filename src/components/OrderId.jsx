@@ -87,25 +87,25 @@ const OrderId = () => {
             <FormLabel>Name</FormLabel>
             <Input
               type="text"
-              placeholder="Brian"
+              placeholder="Jesus"
               onChange={(e) => setName(e.target.value)}
             />
             <FormLabel>Surname</FormLabel>
             <Input
               type="text"
-              placeholder="Vazques"
+              placeholder="Luna"
               onChange={(e) => setSurname(e.target.value)}
             />
             <FormLabel>E-mail</FormLabel>
             <Input
               type="email"
-              placeholder="Brian@vazques.com"
+              placeholder="jesus@luna.com"
               onChange={(e) => setEmail(e.target.value)}
             />
             <FormLabel>Phone</FormLabel>
             <Input
               type="number"
-              placeholder="1123232323"
+              placeholder="1133432573"
               onChange={(e) => setPhone(e.target.value)}
             />
             <FormLabel>Adress</FormLabel>
